@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FC3746D6-ED25-4C3D-BC13-7D8B193D1903}</ProjectGuid>
+    <ProjectTypeGuids>{349C5851-65DF-11DA-9384-00065B846F21};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>PhoneDirectory</RootNamespace>
+    <AssemblyName>PhoneDirectory</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="Mono.Data.Sqlite" />
+    <Reference Include="System.Data" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Web.config" />
+    <Content Include="Statics\jquery\jquery.min.js" />
+    <Content Include="Statics\jquery\jquery.slim.min.js" />
+    <Content Include="Statics\jquery\jquery.slim.js" />
+    <Content Include="Statics\jquery\jquery.js" />
+    <Content Include="Statics\css\main.css" />
+    <Content Include="Statics\popper.js\popper-utils.min.js" />
+    <Content Include="Statics\popper.js\popper-utils.js" />
+    <Content Include="Statics\popper.js\popper.js" />
+    <Content Include="Statics\popper.js\popper.min.js" />
+    <Content Include="Statics\bootstrap\js\bootstrap.min.js" />
+    <Content Include="Statics\bootstrap\js\bootstrap.bundle.min.js" />
+    <Content Include="Statics\bootstrap\js\bootstrap.bundle.js" />
+    <Content Include="Statics\bootstrap\js\bootstrap.js" />
+    <Content Include="Statics\bootstrap\css\bootstrap.css" />
+    <Content Include="Statics\bootstrap\css\bootstrap-reboot.css" />
+    <Content Include="Statics\bootstrap\css\bootstrap-grid.min.css" />
+    <Content Include="Statics\bootstrap\css\bootstrap.min.css" />
+    <Content Include="Statics\bootstrap\css\bootstrap-reboot.min.css" />
+    <Content Include="Statics\bootstrap\css\bootstrap-grid.css" />
+    <Content Include="Statics\fontawesome\css\all.css" />
+    <Content Include="Statics\fontawesome\webfonts\fa-solid-900.ttf" />
+    <Content Include="Statics\fontawesome\webfonts\fa-solid-900.eot" />
+    <Content Include="Statics\fontawesome\webfonts\fa-regular-400.woff" />
+    <Content Include="Statics\fontawesome\webfonts\fa-brands-400.eot" />
+    <Content Include="Statics\fontawesome\webfonts\fa-brands-400.svg" />
+    <Content Include="Statics\fontawesome\webfonts\fa-brands-400.woff" />
+    <Content Include="Statics\fontawesome\webfonts\fa-regular-400.eot" />
+    <Content Include="Statics\fontawesome\webfonts\fa-solid-900.svg" />
+    <Content Include="Statics\fontawesome\webfonts\fa-brands-400.ttf" />
+    <Content Include="Statics\fontawesome\webfonts\fa-regular-400.svg" />
+    <Content Include="Statics\fontawesome\webfonts\fa-regular-400.ttf" />
+    <Content Include="Statics\fontawesome\webfonts\fa-solid-900.woff" />
+    <Content Include="Statics\photos\female.png" />
+    <Content Include="Statics\photos\male.png" />
+    <Content Include="addContact.aspx" />
+    <Content Include="index.aspx" />
+    <Content Include="nav.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DbManager.cs" />
+    <Compile Include="addContact.aspx.cs">
+      <DependentUpon>addContact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="addContact.aspx.designer.cs">
+      <DependentUpon>addContact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Statics\jquery\jquery.min.map" />
+    <None Include="Statics\jquery\jquery.slim.min.map" />
+    <None Include="Statics\popper.js\popper-utils.js.map" />
+    <None Include="Statics\popper.js\popper.js.flow" />
+    <None Include="Statics\popper.js\popper.js.map" />
+    <None Include="Statics\popper.js\popper.min.js.map" />
+    <None Include="Statics\popper.js\popper-utils.min.js.map" />
+    <None Include="Statics\bootstrap\js\bootstrap.bundle.js.map" />
+    <None Include="Statics\bootstrap\js\bootstrap.min.js.map" />
+    <None Include="Statics\bootstrap\js\bootstrap.js.map" />
+    <None Include="Statics\bootstrap\js\bootstrap.bundle.min.js.map" />
+    <None Include="Statics\bootstrap\css\bootstrap-grid.min.css.map" />
+    <None Include="Statics\bootstrap\css\bootstrap.min.css.map" />
+    <None Include="Statics\bootstrap\css\bootstrap-reboot.min.css.map" />
+    <None Include="Statics\bootstrap\css\bootstrap-reboot.css.map" />
+    <None Include="Statics\bootstrap\css\bootstrap-grid.css.map" />
+    <None Include="Statics\bootstrap\css\bootstrap.css.map" />
+    <None Include="Statics\fontawesome\webfonts\fa-regular-400.woff2" />
+    <None Include="Statics\fontawesome\webfonts\fa-solid-900.woff2" />
+    <None Include="Statics\fontawesome\webfonts\fa-brands-400.woff2" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <MonoDevelop>
+      <Properties>
+        <XspParameters Port="8080" Address="127.0.0.1" SslMode="None" SslProtocol="Default" KeyType="None" CertFile="" KeyFile="" PasswordOptions="None" Password="" Verbose="True" />
+      </Properties>
+    </MonoDevelop>
+  </ProjectExtensions>
+</Project>
