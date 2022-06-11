@@ -1,0 +1,4 @@
+Statics/bootstrap/** linguist-vendored
+Statics/fontawesome/** linguist-vendored
+Statics/jquery/** linguist-vendored
+Statics/popper.js linguist-vendored
